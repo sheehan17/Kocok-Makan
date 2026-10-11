@@ -1,0 +1,23 @@
+KOCOK MAKAN — PWA
+
+Isi folder:
+- index.html: aplikasi
+- manifest.webmanifest: nama, ikon, dan mode tampilan PWA
+- sw.js: cache app shell untuk offline
+- icons/: ikon aplikasi
+
+CARA PALING GAMPANG (gratis): GitHub Pages
+1. Buat akun / login ke GitHub.
+2. Buat repository baru, misalnya `kocok-makan`.
+3. Upload semua ISI folder ini (index.html, manifest.webmanifest, sw.js, dan folder icons).
+4. Buka Settings > Pages pada repository.
+5. Pada Build and deployment, pilih Deploy from a branch, branch `main`, folder `/(root)`, lalu Save.
+6. Tunggu sampai GitHub memberi alamat situs HTTPS.
+7. Buka alamat itu di Chrome Android, tunggu sampai halaman termuat sekali dengan internet.
+8. Ketuk menu ⋮ Chrome > “Tambahkan ke layar utama” atau “Install app” (teksnya bisa berbeda), lalu konfirmasi.
+
+CATATAN:
+- PWA perlu dihosting melalui HTTPS (atau localhost) agar instalasi dan service worker aktif. Membuka index.html langsung dari file manager tidak cukup.
+- Offline: setelah aplikasi berhasil dibuka online setidaknya sekali dan cache terpasang, app shell bisa dibuka offline. Google Fonts masih diambil online; jika offline, browser memakai font cadangan.
+- Riwayat, kartu custom, rating, dan foto disimpan lokal di perangkat melalui IndexedDB (fallback localStorage). Data tidak otomatis tersinkron ke perangkat lain. Menghapus data situs/browser bisa menghapus data aplikasi.
+- Tes dahulu di perangkat sendiri sebelum dibagikan.
