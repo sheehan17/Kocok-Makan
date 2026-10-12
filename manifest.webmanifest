@@ -1,18 +1,17 @@
 {
-  "id": "./",
   "name": "Kocok Makan",
   "short_name": "Kocok Makan",
-  "description": "Pilih makanan secara acak dan simpan kenangan makan kalian.",
-  "lang": "id-ID",
-  "start_url": "./index.html",
+  "description": "Kocok kartu buat milih makan.",
+  "lang": "id",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f2e31b",
   "theme_color": "#1f4fa3",
   "icons": [
-    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
-    {"src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }
